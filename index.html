@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>F2E-week-8-parallax scrolling</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <section class="open">
+        <div class="square"></div>
+        <div class="round"></div>
+        <div class="star"></div>
+        <h1>GEOMETRY PERSON</h1>
+        <p>find your core personality type in shapes!</p>
+    </section>
+    <section class="questions">
+        <div class="question q1">
+            <div class="question_content">
+                <h1>Q1</h1>
+                <h3>If one day you get a gift that can change the rule of the world, which ability will you choose?</h3>
+                <p>Choose the answer appeared in your mind instantly</p>
+                <button class="answer">Destroy all humans in the world</button>
+                <button class="answer">Make the war never happened</button>
+                <button class="answer">You won’t get old and live forever</button>
+            </div>
+            <div class="question_graphic">
+                <div class="square"></div>
+                <div class="round"></div>
+                <div class="triangle"></div>
+            </div>
+        </div>
+        <!-- <div class="question q2">
+            <div class="question_content">
+                <h1>Q2</h1>
+                <h3>If one day you get a gift that can change the rule of the world, which ability will you choose?</h3>
+                <p>Choose the answer appeared in your mind instantly</p>
+                <button class="answer">Destroy all humans in the world</button>
+                <button class="answer">Make the war never happened</button>
+                <button class="answer">You won’t get old and live forever</button>
+            </div>
+            <div class="question_graphic"></div>
+        </div> -->
+
+    </section>
+</body>
+
+</html>
+
+<script>
+    window.onload = function () {
+        let open = document.getElementsByClassName('open')[0];
+        let Timer = null;
+        Timer = setTimeout(function () {
+            open.style.display = 'none';
+        }, 7500);
+
+    }
+</script>
